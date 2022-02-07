@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Times New Roman">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <script rel="text/javascript" src="./js/main.js"></script>
+        <style>
+            @font-face {
+                font-family: 'Times New Roman';
+                src: url('./fonts/TimesNewRomanRegular.ttf') format('ttf');
+                font-weight: 400;
+                font-stretch: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'Times New Roman';
+                src: url('./fonts/TimesNewRomanBold.ttf') format('ttf');
+                font-weight: 500;
+                font-stretch: normal;
+                font-display: swap;
+            }
+            .resizeable.active {
+                resize: vertical;
+                overflow: auto;
+            }
+            thead {
+                page-break-before: avoid;
+                page-break-inside: auto;
+            }
+        </style>
+    </head>
+    <body class="flex flex-col">
+        <div class="flex justify-center">
+            <img src="./img/logo.png" alt="" class="w-40" />
+        </div>
+        <div class="flex w-full justify-center text-center">
+            <p class="flex w-8/12 text-xs">
+                Внимание! Оплата данного счета означает согласие с условиями поставки товара. Уведомление об оплате
+                обязательно, в противном случае не гарантируется наличие товара на складе. Товар отпускается по факту
+                прихода денег на р/с Поставщика, при наличии доверенности и паспорта. Данное коммерческое предложение
+                действует только на точное количество товара, указанное в данном счете. <br />
+                СРОК ДЕЙСТВИЯ СЧЕТА ОДИН КАЛЕНДАРНЫЙ ДЕНЬ С ДАТЫ СОСТАВЛЕНИЯ.
+            </p>
+        </div>
+        <div class="w-full text-center">
+            <h2 class="pt-3 font-bold">Образец заполнения платежного поручения</h2>
+        </div>
+        <div class="mx-auto grid w-full grid-cols-2 border-2 border-black">
+            <div class="flex flex-col border-r-2 border-black">
+                <div class="flex flex-col border-b-2 border-black px-2">
+                    <b>Банк ПАО «Сбербанк России»</b>
+                    <span>Банк получателя</span>
+                </div>
+                <div class="flex border-b-2 border-black px-2">
+                    <div class="w-3/6">
+                        <b>ИНН</b>
+                        <b></b>
+                    </div>
+                    <div class="w-3/6">
+                        <b>КПП</b>
+                        <b></b>
+                    </div>
+                </div>
+                <div class="flex flex-col px-2">
+                    <b>ООО «Терадом»</b>
+                    <span>Получатель</span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="-mt-0.5 border-b-2 border-black px-2">
+                    <span>БИК</span>
+                    <b></b>
+                </div>
+                <div class="border-b-2 border-black px-2">
+                    <span>Расчетный счет</span>
+                    <b></b>
+                </div>
+                <div class="px-2">
+                    <span>Кор. счет</span>
+                    <b></b>
+                </div>
+            </div>
+        </div>
+        <div class="flex grow justify-center pt-4 pb-3 text-center">
+            <h1 class="font-bold">Счет № 1 от 09.11.2021</h1>
+        </div>
+        <div>
+            <div class="flex justify-between">
+                <div class="w-4/6">
+                    <span>Поставщик:</span>
+                    <b> ООО "ТЕРАДОМ" </b> <br />
+                    <b> Адрес фирмы </b>
+                </div>
+                <div>
+                    <b class="ml-10">+ 7 (000) 000-00-00</b>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class="w-4/6">
+                    <span>Покупатель:</span>
+                    <b> ООО "Пример" </b> <br />
+                    <b> Адрес клиента </b>
+                </div>
+                <div>
+                    <b class="ml-10">+7 (000) 000-00-00</b>
+                </div>
+            </div>
+        </div>
+        <div class="flex grow justify-center">
+            <table id="resizeMe" class="table w-full">
+                <thead>
+                    <tr>
+                        <th class="border-2 border-black">№</th>
+                        <th class="border-2 border-black">Фото</th>
+                        <th class="border-2 border-black">Товар</th>
+                        <th class="border-2 border-black">Кол-во</th>
+                        <th class="border-2 border-black">Ед.</th>
+                        <th class="border-2 border-black">Цена</th>
+                        <th class="border-2 border-black">Скидка</th>
+                        <th class="border-2 border-black">Сумма</th>
+                    </tr>
+                </thead>
+                <tbody class="align-top">
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">1</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">2</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">3</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">4</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">5</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <tr class="border-2 border-black">
+                        <td class="border-2 border-black p-1 text-center">6</td>
+                        <td
+                            class="resizeable border-2 border-black p-1 text-center align-middle"
+                            style="height: 222px; width: 222px"
+                        >
+                            <img src="./img/products/2.png" alt="" class="h-full w-full object-contain" />
+                        </td>
+                        <td class="resizeable flex h-full flex-col p-1 leading-4" style="height: 222px">
+                            <p class="mb-auto">
+                                Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром Ванная
+                                акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                            </p>
+                            <b>В наличии</b>
+                        </td>
+                        <td class="border-2 border-black p-1 text-center" width="80">1</td>
+                        <td class="border-2 border-black p-1 text-center" width="50">шт</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">844 200.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">13 500.00</td>
+                        <td class="border-2 border-black p-1 text-right" width="100">329 800.00</td>
+                    </tr>
+                    <!-- <tr class="border-2 border-black">
+                        <td class="p-1 border-2 border-black text-center">1</td>
+                        <td class="p-1 border-2 border-black resizeable">
+                            <div class="flex flex-col items-center justify-center" style="height: 222px; width: 200px">
+                                <img src="./img/products/2.png" alt="" class="object-contain h-full w-full" />
+                            </div>
+                        </td>
+                        <td class="p-1 border-2 border-black" style="height: 222px">
+                            <div class="flex flex-col justify-between h-full w-full leading-4">
+                                <p>
+                                    Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                                    Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                                    Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                                    Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                                    Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                                    Ванная акриловая Kolpasan 160x70 В комплекте усиленный каркас и слив перелив хром
+                                </p>
+                                <b>В наличии</b>
+                            </div>
+                        </td>
+                        <td class="p-1 border-2 border-black text-center" width="80">1</td>
+                        <td class="p-1 border-2 border-black text-center" width="50">шт</td>
+                        <td class="p-1 border-2 border-black text-right" width="100">844 200.00</td>
+                        <td class="p-1 border-2 border-black text-right" width="100">13 500.00</td>
+                        <td class="p-1 border-2 border-black text-right" width="100">329 800.00</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
